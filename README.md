@@ -137,8 +137,8 @@ JSON-LD block in `<head>`.
 
 - **Dark / light theme** — respects `prefers-color-scheme`, remembers the choice in `localStorage`,
   and resolves before first paint so there is no flash of the wrong palette.
-- **Animated voice pipeline** — the hero panel walks the real Twilio → Deepgram → OpenAI → ElevenLabs
-  stack with per-stage latency. Pauses when off-screen or when the tab is hidden.
+- **Animated voice pipeline** — the hero panel steps through the Twilio → Deepgram → OpenAI → ElevenLabs
+  pipeline. Pauses when off-screen or when the tab is hidden.
 - **Scroll reveals, counting stats, scroll-spy nav** — all via `IntersectionObserver`, with static
   fallbacks when it is unavailable.
 - **Accessibility** — skip link, semantic landmarks, visible focus rings, ARIA on the menu and theme

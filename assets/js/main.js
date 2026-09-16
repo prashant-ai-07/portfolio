@@ -169,7 +169,12 @@
     window.requestAnimationFrame(step);
   }
 
+  // The real figures are in the markup (no-JS, crawlers, screen readers). Only when the
+  // count-up will actually run do we reset them to zero first.
   var counters = document.querySelectorAll('[data-count]');
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    counters.forEach(function (el) { el.textContent = formatCount(el, 0); });
+  }
   if ('IntersectionObserver' in window) {
     var countObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -179,14 +184,11 @@
       });
     }, { threshold: 0.6 });
     counters.forEach(function (el) { countObserver.observe(el); });
-  } else {
-    counters.forEach(function (el) { el.textContent = formatCount(el, el.dataset.count); });
   }
 
   /* --------------------- Hero pipeline animation ----------------------- */
   var pipeline = document.getElementById('pipeline');
   var waveEl = document.getElementById('wave');
-  var latencyEl = document.getElementById('latency');
 
   if (waveEl) {
     for (var b = 0; b < 28; b++) waveEl.appendChild(document.createElement('span'));
@@ -203,11 +205,6 @@
     function cycle() {
       stages.forEach(function (s, i) { s.classList.toggle('is-active', i === index); });
       index = (index + 1) % stages.length;
-
-      // A fresh plausible round-trip figure each full pass through the stack.
-      if (index === 0 && latencyEl) {
-        latencyEl.textContent = String(800 + Math.floor(Math.random() * 100));
-      }
     }
 
     function animateWave() {

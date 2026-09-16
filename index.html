@@ -4,13 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prashant Singh — AI Engineer</title>
-<meta name="description" content="AI Engineer specialising in real-time voice agents, LLM systems and RAG pipelines. Builds low-latency STT to LLM to TTS architectures with FastAPI, OpenAI, Qdrant and Twilio, wired into production CRM workflows." />
+<meta name="description" content="AI Engineer working on real-time voice agents, LLM applications and RAG systems with FastAPI, OpenAI, Qdrant, Deepgram, ElevenLabs and Twilio." />
 <meta name="author" content="Prashant Singh" />
 <meta name="theme-color" content="#0a0b0d" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Prashant Singh — AI Engineer" />
-<meta property="og:description" content="Real-time voice AI, LLM systems and RAG pipelines. 800–900ms end-to-end voice latency at production scale." />
+<meta property="og:description" content="AI Engineer building real-time voice agents, LLM applications and RAG systems. Voice agent pipeline with 800–900 ms round-trip latency." />
 <meta property="og:image" content="assets/img/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
 
@@ -70,7 +70,7 @@
     <nav class="nav" id="nav" aria-label="Primary">
       <a href="#work">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#stack">Stack</a>
+      <a href="#stack">Skills</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -95,20 +95,20 @@
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow reveal"><span class="pulse" aria-hidden="true"></span> Available for AI engineering roles</p>
+      <p class="eyebrow reveal">AI Engineer &middot; Samodrei LLC</p>
 
       <h1 class="reveal">I build <em>real-time</em> AI systems that talk back.</h1>
 
       <p class="lede reveal">
-        AI Engineer with 3+ years shipping production LLM software &mdash; voice agents, RAG pipelines
-        and NLP services. Currently at <strong>Samodrei LLC</strong>, where I built a full inbound and
-        outbound calling platform on a voice stack running at <strong>800&ndash;900&nbsp;ms</strong>
+        AI Engineer with 3+ years of experience building LLM applications &mdash; voice agents, RAG
+        systems and NLP pipelines. At <strong>Samodrei LLC</strong> I built an inbound and outbound
+        AI calling platform whose voice pipeline runs at <strong>800&ndash;900&nbsp;ms</strong>
         round-trip latency.
       </p>
 
       <div class="hero-cta reveal">
         <a class="btn btn-primary" href="#projects">
-          View selected work
+          View projects
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
         </a>
         <a class="btn btn-ghost" href="mailto:singhprashant0824@gmail.com">Get in touch</a>
@@ -126,50 +126,50 @@
       </ul>
     </div>
 
-    <!-- Hero visual: the production voice pipeline, stage by stage -->
-    <aside class="hero-panel reveal" aria-label="Voice pipeline architecture diagram">
+    <!-- Hero visual: the voice agent's call pipeline. Only the end-to-end figure is a measured
+         number; per-stage timings are not published, so none are shown. -->
+    <aside class="hero-panel reveal" aria-label="Voice agent pipeline: Twilio, Deepgram, OpenAI, ElevenLabs">
       <div class="panel-bar">
         <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-        <span class="panel-title">voice-pipeline</span>
-        <span class="panel-live"><i></i>live</span>
+        <span class="panel-title">voice-agent pipeline</span>
       </div>
       <div class="panel-body">
         <ol class="pipeline" id="pipeline">
-          <li class="stage" data-stage="0">
+          <li class="stage">
             <span class="stage-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M4.5 5.5c0 8 6 14 14 14l1.8-3.4-4.3-2.2-2 2a13 13 0 0 1-5.9-5.9l2-2L7.9 3.7 4.5 5.5Z"/></svg>
             </span>
-            <span class="stage-text"><b>Twilio</b><small>inbound / outbound audio</small></span>
-            <span class="stage-ms">40ms</span>
+            <span class="stage-text"><b>Twilio</b><small>inbound &amp; outbound call audio</small></span>
+            <span class="stage-role">telephony</span>
           </li>
-          <li class="stage" data-stage="1">
+          <li class="stage">
             <span class="stage-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3"/></svg>
             </span>
-            <span class="stage-text"><b>Deepgram</b><small>streaming speech-to-text</small></span>
-            <span class="stage-ms">180ms</span>
+            <span class="stage-text"><b>Deepgram</b><small>streaming transcription</small></span>
+            <span class="stage-role">STT</span>
           </li>
-          <li class="stage" data-stage="2">
+          <li class="stage">
             <span class="stage-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 3v3.4M12 17.6V21M3 12h3.4M17.6 12H21M5.6 5.6 8 8M16 16l2.4 2.4M18.4 5.6 16 8M8 16l-2.4 2.4"/><circle cx="12" cy="12" r="3.4"/></svg>
             </span>
-            <span class="stage-text"><b>OpenAI</b><small>LLM reasoning + RAG context</small></span>
-            <span class="stage-ms">380ms</span>
+            <span class="stage-text"><b>OpenAI</b><small>reply generation with Qdrant retrieval</small></span>
+            <span class="stage-role">LLM</span>
           </li>
-          <li class="stage" data-stage="3">
+          <li class="stage">
             <span class="stage-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M4 10v4M8 6.5v11M12 3.5v17M16 6.5v11M20 10v4"/></svg>
             </span>
-            <span class="stage-text"><b>ElevenLabs</b><small>cloned-voice TTS stream</small></span>
-            <span class="stage-ms">220ms</span>
+            <span class="stage-text"><b>ElevenLabs</b><small>speech in a cloned voice</small></span>
+            <span class="stage-role">TTS</span>
           </li>
         </ol>
 
         <div class="panel-foot">
           <div class="wave" id="wave" aria-hidden="true"></div>
           <div class="latency">
-            <span class="latency-label">end&#8209;to&#8209;end</span>
-            <span class="latency-value"><span id="latency">860</span>ms</span>
+            <span class="latency-label">round trip</span>
+            <span class="latency-value">800&ndash;900&nbsp;ms</span>
           </div>
         </div>
       </div>
@@ -177,11 +177,12 @@
   </div>
 
   <div class="wrap">
+    <!-- Real values live in the markup; JS only animates the count when motion is allowed. -->
     <ul class="stats reveal">
-      <li><b data-count="100" data-suffix="K+">0</b><span>queries handled / day</span></li>
-      <li><b data-count="900" data-prefix="&lt;" data-suffix="ms">0</b><span>voice round-trip latency</span></li>
-      <li><b data-count="95" data-suffix="%">0</b><span>manual effort removed</span></li>
-      <li><b data-count="3" data-suffix="+ yrs">0</b><span>production AI engineering</span></li>
+      <li><b data-count="100" data-suffix="K+">100K+</b><span>queries / day &middot; ICICI Bank chatbot</span></li>
+      <li><b data-count="95" data-suffix="%">95%</b><span>less manual effort &middot; r&eacute;sum&eacute; parser</span></li>
+      <li><b data-count="90" data-suffix="%">90%</b><span>query resolution &middot; OpenAI chatbots</span></li>
+      <li><b data-count="3" data-suffix="+ yrs">3+ yrs</b><span>industry experience</span></li>
     </ul>
   </div>
 </section>
@@ -191,8 +192,8 @@
   <div class="wrap">
     <header class="section-head reveal">
       <span class="section-tag">01 &mdash; Experience</span>
-      <h2>Where I&rsquo;ve shipped</h2>
-      <p>Three years across voice AI, LLM platforms and NLP infrastructure &mdash; from intern to owning production pipelines.</p>
+      <h2>Work experience</h2>
+      <p>July 2023 to present &mdash; from Python developer intern to AI engineer, across NLP pipelines, LLM applications and voice AI.</p>
     </header>
 
     <ol class="timeline">
@@ -208,22 +209,21 @@
           </div>
 
           <ul class="bullets">
-            <li><b>Voice AI platform.</b> Built a real-time voice agent system handling both outbound campaigns and inbound calls, with dynamic multi-turn conversations over a Twilio media stream.</li>
-            <li><b>Low-latency pipeline.</b> Engineered the end-to-end voice path (Twilio &rarr; Deepgram &rarr; OpenAI &rarr; ElevenLabs) holding 800&ndash;900&nbsp;ms round trip.</li>
-            <li><b>Barge-in handling.</b> Added streaming STT with interruption detection, adaptive-threshold VAD and noise reduction so the agent yields the moment the caller starts speaking.</li>
-            <li><b>Per-agent RAG.</b> Gave every agent its own Qdrant collection built from uploaded documents, so replies are grounded in the customer&rsquo;s data rather than the prompt alone.</li>
+            <li><b>Voice AI platform.</b> Built a real-time AI voice agent system for outbound campaigns and inbound calls, with dynamic multi-turn conversations.</li>
+            <li><b>Low-latency pipeline.</b> Engineered the end-to-end voice pipeline (Twilio &rarr; Deepgram &rarr; OpenAI &rarr; ElevenLabs) achieving 800&ndash;900&nbsp;ms latency.</li>
+            <li><b>Barge-in handling.</b> Used Deepgram streaming STT with interruption detection, voice activity detection with adaptive silence thresholds, and noise reduction before transcription.</li>
+            <li><b>RAG system.</b> Developed scalable retrieval-augmented generation with FastAPI, OpenAI embeddings and the Qdrant vector database, with a separate knowledge base per agent.</li>
             <li><b>Streaming architecture.</b> Implemented async WebSocket streaming for STT and TTS using asyncio and chunked audio processing.</li>
-            <li><b>Campaign automation.</b> Built bulk calling on an async queue with per-campaign locks, configurable retries, calling-hour windows and APScheduler cron for recurring runs.</li>
-            <li><b>Voice &amp; personalisation.</b> Shipped persona-driven agents with custom prompts and voice cloning through the ElevenLabs API.</li>
-            <li><b>Call intelligence.</b> Added IVR detection, DTMF automation and a post-call summariser that turns each transcript into structured JSON with a CRM-standard lead status.</li>
-            <li><b>CRM reliability.</b> Mapped statuses onto Zoho, HubSpot and Salesforce fields behind a webhook layer with exponential-backoff retries, a circuit breaker and a dead-letter queue.</li>
-            <li><b>Data &amp; observability.</b> Persisted recordings and transcripts to S3 and call metadata to MySQL, with per-stage latency tracking and real-time cost monitoring across AI vendors.</li>
+            <li><b>Campaign automation.</b> Built bulk calling with APScheduler scheduling, retries, calling-hour windows and queue-based execution with per-campaign locks.</li>
+            <li><b>Voice &amp; personalisation.</b> Enabled persona-driven agents with custom prompts and voice cloning using the ElevenLabs API.</li>
+            <li><b>Call intelligence.</b> Implemented IVR detection, DTMF automation and post-call summarisation that classifies each call into a CRM lead status.</li>
+            <li><b>CRM integrations.</b> Integrated Zoho, HubSpot and Salesforce, with exponential-backoff retries, a circuit breaker and a dead-letter queue for failed webhooks.</li>
+            <li><b>Observability &amp; costing.</b> Designed latency tracking across the STT/LLM/TTS pipeline and real-time cost monitoring across AI services.</li>
           </ul>
 
           <ul class="tags">
-            <li>FastAPI</li><li>WebSockets</li><li>asyncio</li><li>Qdrant</li><li>OpenAI</li>
-            <li>Deepgram</li><li>ElevenLabs</li><li>Twilio</li><li>APScheduler</li>
-            <li>MySQL</li><li>AWS S3</li><li>RAG</li>
+            <li>FastAPI</li><li>asyncio</li><li>WebSockets</li><li>Twilio</li><li>Deepgram</li>
+            <li>OpenAI</li><li>Qdrant</li><li>ElevenLabs</li><li>APScheduler</li><li>MySQL</li><li>AWS S3</li>
           </ul>
         </article>
       </li>
@@ -240,17 +240,17 @@
           </div>
 
           <ul class="bullets">
-            <li><b>LLM solutions.</b> Designed and deployed AI systems on OpenAI and Hugging Face models for real-world applications.</li>
-            <li><b>Insurance data integration (RGI).</b> Built the SOAP API services for Reliance General Insurance that fetch records from core systems and hand normalised data to downstream processing.</li>
-            <li><b>NLP pipelines.</b> Built end-to-end pipelines covering tokenization, named entity recognition and pattern extraction.</li>
-            <li><b>Scalable deployment.</b> Containerised with Docker and orchestrated on Kubernetes for model serving on GCP.</li>
-            <li><b>API development.</b> Delivered REST APIs and automated workflows with FastAPI, validated through Postman.</li>
-            <li><b>Performance.</b> Improved real-time model response efficiency by 20% through parameter tuning.</li>
+            <li><b>LLM solutions.</b> Designed and deployed AI systems using OpenAI and Hugging Face models for real-world applications.</li>
+            <li><b>Reliance General Insurance (RGI).</b> Created SOAP APIs to fetch information for further downstream processing.</li>
+            <li><b>NLP pipelines.</b> Built end-to-end NLP pipelines including tokenization, named entity recognition and pattern extraction.</li>
+            <li><b>Scalable deployment.</b> Used Docker and Kubernetes for scalable model deployment on GCP.</li>
+            <li><b>API development.</b> Developed REST APIs and automated workflows using FastAPI and Postman.</li>
+            <li><b>Performance optimisation.</b> Improved real-time model response efficiency by 20% through parameter tuning.</li>
           </ul>
 
           <ul class="tags">
-            <li>Hugging Face</li><li>Transformers</li><li>NER</li><li>SOAP / XML</li>
-            <li>Docker</li><li>Kubernetes</li><li>GCP</li><li>FastAPI</li>
+            <li>OpenAI</li><li>Hugging Face</li><li>FastAPI</li><li>SOAP</li>
+            <li>Docker</li><li>Kubernetes</li><li>GCP</li><li>Postman</li>
           </ul>
         </article>
       </li>
@@ -267,14 +267,14 @@
           </div>
 
           <ul class="bullets">
-            <li><b>Chatbot development.</b> Built chatbot systems on the OpenAI API reaching a 90% query resolution rate.</li>
-            <li><b>Web scraping.</b> Developed scraping pipelines with BeautifulSoup and Scrapy.</li>
-            <li><b>Backend.</b> Built web applications on FastAPI and PostgreSQL.</li>
+            <li><b>Chatbot development.</b> Built chatbot systems using OpenAI APIs, achieving a 90% query resolution rate.</li>
+            <li><b>Web scraping.</b> Developed scraping pipelines using BeautifulSoup and Scrapy.</li>
+            <li><b>Backend development.</b> Built web applications using FastAPI and PostgreSQL.</li>
             <li><b>Data handling.</b> Worked on large-scale data processing and file I/O operations.</li>
           </ul>
 
           <ul class="tags">
-            <li>Python</li><li>BeautifulSoup</li><li>Scrapy</li><li>PostgreSQL</li><li>FastAPI</li>
+            <li>Python</li><li>OpenAI</li><li>BeautifulSoup</li><li>Scrapy</li><li>FastAPI</li><li>PostgreSQL</li>
           </ul>
         </article>
       </li>
@@ -286,93 +286,90 @@
 <section class="section section-alt" id="projects">
   <div class="wrap">
     <header class="section-head reveal">
-      <span class="section-tag">02 &mdash; Selected work</span>
-      <h2>Projects with measurable outcomes</h2>
-      <p>Systems built end to end &mdash; from model choice and retrieval design through to the API that serves them, the queue that drives them and the CRM they report into.</p>
+      <span class="section-tag">02 &mdash; Projects</span>
+      <h2>Projects</h2>
+      <p>Selected projects, including work for ICICI Bank and Reliance General Insurance.</p>
     </header>
 
     <div class="cards">
-      <!-- Flagship: the voice agent platform -->
       <article class="card card-feature reveal">
         <div class="feature-head">
           <div class="feature-intro">
             <div class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="2.5" y="13" width="4" height="6" rx="2"/><rect x="17.5" y="13" width="4" height="6" rx="2"/><path d="M20 19v.6a2.4 2.4 0 0 1-2.4 2.4H13"/></svg>
             </div>
-            <span class="chip chip-live">Flagship &mdash; Samodrei LLC</span>
+            <span class="chip chip-live">Samodrei LLC</span>
             <h3>AI Voice Agent Platform</h3>
             <p>
-              An end-to-end outbound and inbound calling platform. Agents dial from a campaign list or
-              answer a Twilio number, hold a live conversation grounded in the customer&rsquo;s own
-              documents, then classify the lead and write it back to their CRM &mdash; with no human
-              in the loop.
+              An outbound and inbound AI calling platform. Agents place calls from campaign lists or
+              answer calls to a Twilio number, hold multi-turn conversations backed by a per-agent
+              knowledge base, then summarise the call, classify the lead and update the CRM.
             </p>
           </div>
 
           <ul class="kpis feature-kpis">
-            <li><b>800&ndash;900ms</b><span>end-to-end round trip</span></li>
-            <li><b>Two-way</b><span>inbound + outbound flows</span></li>
-            <li><b>Cloned voice</b><span>per agent persona</span></li>
-            <li><b>3 CRMs</b><span>Zoho · HubSpot · Salesforce</span></li>
+            <li><b>800&ndash;900&nbsp;ms</b><span>round-trip voice latency</span></li>
+            <li><b>3 CRMs</b><span>Zoho, HubSpot, Salesforce</span></li>
           </ul>
         </div>
 
         <div class="spec-grid">
           <div class="spec">
-            <h4><span class="spec-num" aria-hidden="true">01</span> Conversation engine</h4>
+            <h4><span class="spec-num" aria-hidden="true">01</span> Speech pipeline</h4>
             <p>
-              Deepgram streaming STT with barge-in detection, adaptive-threshold VAD and noise
-              reduction, so the agent stops mid-sentence the moment the caller speaks. GPT-4.1-mini
-              with prompt caching writes the reply; ElevenLabs streams it back over the Twilio media
-              stream.
+              Deepgram streaming speech-to-text in English and multilingual modes, with barge-in
+              detection, voice activity detection using adaptive silence thresholds, and noise
+              reduction before transcription. ElevenLabs turns each reply into speech in the
+              agent&rsquo;s cloned voice.
             </p>
           </div>
           <div class="spec">
-            <h4><span class="spec-num" aria-hidden="true">02</span> Per-agent knowledge base</h4>
+            <h4><span class="spec-num" aria-hidden="true">02</span> LLM &amp; knowledge base</h4>
             <p>
-              Every agent gets its own Qdrant collection built from uploaded PDFs and documents, so
-              answers are grounded in that customer&rsquo;s product data rather than the system prompt
-              alone.
+              OpenAI GPT-4.1-mini with prompt caching generates replies. Each agent has its own
+              Qdrant knowledge base built from uploaded PDFs and documents, queried when the caller
+              asks a specific question. Conversation history is kept per call, with anti-repetition
+              logic.
             </p>
           </div>
           <div class="spec">
             <h4><span class="spec-num" aria-hidden="true">03</span> Campaign orchestration</h4>
             <p>
-              An async queue with per-campaign locks, configurable retries and inter-call delays,
-              calling-hour windows that auto-pause outside business hours, and APScheduler cron
-              expressions for recurring runs.
+              Async queue-based bulk calling with per-campaign locks; configurable retries, retry
+              delay and inter-call delay; calling-hour windows per user or contact list; APScheduler
+              cron schedules for recurring campaigns; campaign progress tracked in MySQL.
             </p>
           </div>
           <div class="spec">
             <h4><span class="spec-num" aria-hidden="true">04</span> Post-call intelligence</h4>
             <p>
-              A summariser turns each transcript into structured JSON carrying a CRM-standard lead
-              status, self-correcting contradictions such as a callback logged as a closed deal, and
-              recovers email addresses spelled out letter by letter.
+              After every call, GPT parses the transcript into structured JSON with a CRM lead status
+              such as <code>OPEN_DEAL</code> or <code>BAD_TIMING</code>. Inconsistent statuses are
+              auto-corrected, and email addresses spelled out letter by letter are extracted.
             </p>
           </div>
           <div class="spec">
-            <h4><span class="spec-num" aria-hidden="true">05</span> Delivery you can trust</h4>
+            <h4><span class="spec-num" aria-hidden="true">05</span> CRM &amp; calendar integration</h4>
             <p>
-              Internal statuses map onto exact Zoho, HubSpot and Salesforce field values, sent through
-              a webhook layer with exponential-backoff retries, a circuit breaker that trips when the
-              CRM is down, and a dead-letter queue drained every five minutes.
+              Lead statuses are mapped to Zoho, HubSpot and Salesforce field values. Webhooks retry
+              with exponential backoff (up to 3 attempts), a circuit breaker pauses delivery while a
+              CRM is down, and a dead-letter queue retries failures every 5 minutes. Google Calendar
+              integration stores meeting event IDs and Meet links.
             </p>
           </div>
           <div class="spec">
-            <h4><span class="spec-num" aria-hidden="true">06</span> Audit trail</h4>
+            <h4><span class="spec-num" aria-hidden="true">06</span> Storage &amp; logging</h4>
             <p>
-              Recordings and full transcripts land in S3, call metadata and campaign state in MySQL,
-              and a millisecond-precision timing log makes every stage of the latency budget
-              auditable after the fact.
+              Call recordings (MP3, with WAV fallback) and transcripts are stored in AWS S3;
+              transcripts and call metadata in MySQL. A millisecond-precision timing log records
+              latency for auditing.
             </p>
           </div>
         </div>
 
         <ul class="tags">
-          <li>FastAPI</li><li>WebSockets</li><li>asyncio</li><li>Twilio</li><li>Deepgram</li>
-          <li>GPT-4.1-mini</li><li>Qdrant</li><li>ElevenLabs</li><li>APScheduler</li>
-          <li>MySQL</li><li>AWS S3</li><li>Circuit breaker</li>
+          <li>FastAPI</li><li>asyncio</li><li>WebSockets</li><li>Twilio</li><li>Deepgram</li>
+          <li>OpenAI</li><li>Qdrant</li><li>ElevenLabs</li><li>APScheduler</li><li>MySQL</li><li>AWS S3</li>
         </ul>
       </article>
 
@@ -381,19 +378,17 @@
           <div class="card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.7 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.7-3.9-9S9.4 5.6 12 3Z"/></svg>
           </div>
-          <span class="chip chip-soft">Client &mdash; ICICI Bank</span>
-          <h3>Multilingual Banking Chatbot</h3>
+          <span class="chip chip-soft">ICICI Bank</span>
+          <h3>Multilingual Chatbot</h3>
           <p>
-            Extended a production banking assistant to serve Indian languages at national scale, combining
-            <b>ModernBERT</b> for intent understanding, <b>AI4Bharat</b> models for Indic coverage and
-            <b>NLLB</b> for translation &mdash; tuned so multilingual routing did not cost response time.
+            Enabled multilingual capabilities in a chatbot for ICICI Bank using <b>ModernBERT</b>,
+            <b>AI4Bharat</b> and <b>NLLB</b> models, with improved response latency.
           </p>
-          <ul class="tags"><li>ModernBERT</li><li>AI4Bharat</li><li>NLLB</li><li>Transformers</li><li>Kubernetes</li></ul>
+          <ul class="tags"><li>ModernBERT</li><li>AI4Bharat</li><li>NLLB</li></ul>
         </div>
         <ul class="kpis kpis-col">
-          <li><b>100K+</b><span>queries handled / day</span></li>
+          <li><b>100K+</b><span>queries handled per day</span></li>
           <li><b>30%</b><span>better user satisfaction</span></li>
-          <li><b>Lower</b><span>latency vs. previous stack</span></li>
         </ul>
       </article>
     </div>
@@ -403,33 +398,27 @@
         <div class="card-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg>
         </div>
-        <span class="chip chip-soft">Client &mdash; Reliance General Insurance</span>
-        <h3>RGI Policy Data Integration</h3>
+        <span class="chip chip-soft">Reliance General Insurance</span>
+        <h3>RGI SOAP APIs</h3>
         <p>
-          Built the SOAP API services that pull records out of the insurer&rsquo;s core systems and
-          hand a normalised payload to the downstream processing pipeline &mdash; the integration
-          layer the AI workflows depended on for their source data.
+          Created SOAP APIs for Reliance General Insurance, as part of ML AI Digital, to fetch
+          information for further downstream processing.
         </p>
-        <ul class="kpis">
-          <li><b>SOAP</b><span>XML service layer</span></li>
-          <li><b>Normalised</b><span>downstream payloads</span></li>
-          <li><b>Enterprise</b><span>insurance systems</span></li>
-        </ul>
-        <ul class="tags"><li>SOAP / XML</li><li>Python</li><li>FastAPI</li><li>Data pipelines</li></ul>
+        <ul class="tags"><li>SOAP</li></ul>
       </article>
 
       <article class="card reveal">
         <div class="card-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12.5h6M9 16.5h4"/></svg>
         </div>
-        <h3>NLP Résumé Parser</h3>
-        <p>An NER and pattern-recognition parser that turns unstructured CVs into structured candidate records, plugged directly into the hiring workflow.</p>
+        <h3>R&eacute;sum&eacute; Parser</h3>
+        <p>An NLP-based r&eacute;sum&eacute; parser using named entity recognition and pattern recognition.</p>
         <ul class="kpis">
-          <li><b>500+</b><span>résumés / month</span></li>
+          <li><b>500+</b><span>r&eacute;sum&eacute;s / month</span></li>
           <li><b>95%</b><span>less manual effort</span></li>
-          <li><b>35%</b><span>hiring efficiency gain</span></li>
+          <li><b>35%</b><span>better hiring efficiency</span></li>
         </ul>
-        <ul class="tags"><li>NER</li><li>Pattern extraction</li><li>Python</li><li>FastAPI</li></ul>
+        <ul class="tags"><li>NLP</li><li>NER</li></ul>
       </article>
 
       <article class="card reveal">
@@ -437,13 +426,8 @@
           <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20.5 20.5-4.4-4.4"/><path d="M8.5 11h5M11 8.5v5"/></svg>
         </div>
         <h3>Document Search Chatbot</h3>
-        <p>Semantic search across a private document corpus using OpenAI embeddings and a FAISS index, with contextual Q&amp;A that carries follow-up intent across turns.</p>
-        <ul class="kpis">
-          <li><b>FAISS</b><span>vector index</span></li>
-          <li><b>Multi-turn</b><span>context retention</span></li>
-          <li><b>Semantic</b><span>retrieval ranking</span></li>
-        </ul>
-        <ul class="tags"><li>OpenAI Embeddings</li><li>FAISS</li><li>RAG</li><li>Python</li></ul>
+        <p>A chatbot using OpenAI embeddings and FAISS indexing for semantic search, with contextual Q&amp;A that understands follow-up questions.</p>
+        <ul class="tags"><li>OpenAI embeddings</li><li>FAISS</li></ul>
       </article>
     </div>
   </div>
@@ -453,49 +437,61 @@
 <section class="section" id="stack">
   <div class="wrap">
     <header class="section-head reveal">
-      <span class="section-tag">03 &mdash; Toolkit</span>
-      <h2>Technical stack</h2>
-      <p>What I reach for when building and shipping AI systems.</p>
+      <span class="section-tag">03 &mdash; Skills</span>
+      <h2>Technical skills</h2>
+      <p>Languages, frameworks, libraries, services and tools I&rsquo;ve worked with.</p>
     </header>
 
-    <div class="stack-grid">
-      <div class="stack-col reveal">
+    <ul class="stack-list reveal">
+      <li class="stack-row">
         <h3>Languages</h3>
         <ul class="pills"><li>Python</li><li>JavaScript</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
-      </div>
-      <div class="stack-col reveal">
-        <h3>AI / ML</h3>
-        <ul class="pills"><li>LLMs</li><li>Transformers</li><li>NLP</li><li>Hugging Face</li><li>OpenAI APIs</li><li>RAG</li><li>Embeddings</li><li>Prompt caching</li></ul>
-      </div>
-      <div class="stack-col reveal">
+      </li>
+      <li class="stack-row">
         <h3>Frameworks</h3>
-        <ul class="pills"><li>FastAPI</li><li>LangGraph</li><li>PyTorch</li><li>asyncio</li><li>WebSockets</li><li>APScheduler</li></ul>
-      </div>
-      <div class="stack-col reveal">
-        <h3>Data &amp; vector</h3>
-        <ul class="pills"><li>Qdrant</li><li>FAISS</li><li>MySQL</li><li>PostgreSQL</li><li>AWS S3</li><li>Database design</li></ul>
-      </div>
-      <div class="stack-col reveal">
-        <h3>Voice &amp; telephony</h3>
-        <ul class="pills"><li>Twilio</li><li>Deepgram</li><li>ElevenLabs</li><li>Streaming STT / TTS</li><li>VAD &amp; barge-in</li><li>Voice cloning</li></ul>
-      </div>
-      <div class="stack-col reveal">
-        <h3>Infrastructure</h3>
-        <ul class="pills"><li>Docker</li><li>Kubernetes</li><li>GCP</li><li>Cloud Run</li><li>Postman</li></ul>
-      </div>
-      <div class="stack-col reveal">
-        <h3>Integrations</h3>
-        <ul class="pills"><li>Zoho CRM</li><li>HubSpot</li><li>Salesforce</li><li>Google Calendar</li><li>SOAP / XML</li><li>Webhooks</li></ul>
-      </div>
-      <div class="stack-col reveal">
-        <h3>Reliability</h3>
-        <ul class="pills"><li>Circuit breakers</li><li>Dead-letter queues</li><li>Exponential backoff</li><li>Retry policies</li><li>Queue locking</li></ul>
-      </div>
-      <div class="stack-col reveal">
-        <h3>Observability</h3>
-        <ul class="pills"><li>Latency tracing</li><li>Cost monitoring</li><li>Structured logging</li><li>Audit trails</li></ul>
-      </div>
-    </div>
+        <ul class="pills"><li>FastAPI</li><li>LangGraph</li><li>PyTorch</li><li>Scrapy</li></ul>
+      </li>
+      <li class="stack-row">
+        <h3>Libraries</h3>
+        <ul class="pills"><li>Hugging Face Transformers</li><li>FAISS</li><li>asyncio</li><li>APScheduler</li><li>BeautifulSoup</li><li>noisereduce</li></ul>
+      </li>
+      <li class="stack-row">
+        <h3>AI &amp; NLP</h3>
+        <ul class="pills"><li>LLMs</li><li>RAG</li><li>Embeddings</li><li>Semantic search</li><li>NLP</li><li>Named entity recognition</li></ul>
+      </li>
+      <li class="stack-row">
+        <h3>Models</h3>
+        <ul class="pills"><li>GPT-4.1-mini</li><li>ModernBERT</li><li>NLLB</li><li>AI4Bharat models</li></ul>
+      </li>
+      <li class="stack-row">
+        <h3>AI &amp; voice APIs</h3>
+        <ul class="pills"><li>OpenAI <small>LLM</small></li><li>Deepgram <small>STT</small></li><li>ElevenLabs <small>TTS</small></li><li>Twilio <small>telephony</small></li></ul>
+      </li>
+      <li class="stack-row">
+        <h3>Databases</h3>
+        <ul class="pills"><li>MySQL</li><li>PostgreSQL</li><li>Qdrant <small>vector</small></li></ul>
+      </li>
+      <li class="stack-row">
+        <h3>Cloud</h3>
+        <ul class="pills"><li>Google Cloud Platform</li><li>Google Container Registry</li><li>AWS S3</li></ul>
+      </li>
+      <li class="stack-row">
+        <h3>Tools</h3>
+        <ul class="pills"><li>Docker</li><li>Kubernetes</li><li>Postman</li></ul>
+      </li>
+      <li class="stack-row">
+        <h3>API styles &amp; protocols</h3>
+        <ul class="pills"><li>REST</li><li>SOAP</li><li>WebSockets</li><li>Webhooks</li></ul>
+      </li>
+      <li class="stack-row">
+        <h3>Business integrations</h3>
+        <ul class="pills"><li>Zoho CRM</li><li>HubSpot</li><li>Salesforce</li><li>Google Calendar</li></ul>
+      </li>
+      <li class="stack-row">
+        <h3>Practices</h3>
+        <ul class="pills"><li>API development</li><li>Database design</li><li>Web scraping</li></ul>
+      </li>
+    </ul>
 
     <div class="certs reveal">
       <h3 class="certs-title">Certifications</h3>
@@ -522,48 +518,24 @@
   <div class="wrap about-grid">
     <div class="reveal">
       <span class="section-tag">04 &mdash; About</span>
-      <h2>How I work</h2>
+      <h2>About me</h2>
       <p class="about-body">
-        I&rsquo;m an AI Engineer based in Faridabad, India. Most of my work sits at the point where a model
-        stops being a notebook experiment and has to answer a real user &mdash; under a latency budget,
-        with real data behind it, at a cost someone has to pay for.
+        I&rsquo;m an AI Engineer based in Faridabad, India. I joined ML AI Digital as a Python
+        developer intern in July 2023,
+        became an AI Engineer there in October 2023, and moved to Samodrei LLC in July 2025.
       </p>
       <p class="about-body">
-        In practice that has meant profiling every hop of a voice call to find the 100&nbsp;ms hiding in a
-        buffer, designing retrieval so an LLM cites the right paragraph instead of guessing, and putting
-        FastAPI services on Kubernetes where they survive real traffic. I care about the unglamorous parts
-        &mdash; observability, retries, cost per call &mdash; because they are what separates a usable AI
-        feature from a demo.
+        My work has covered chatbots, NLP pipelines, multilingual models and SOAP API integrations,
+        and most recently a real-time voice agent platform &mdash; its speech and LLM pipeline,
+        campaign scheduling, CRM integrations, and latency and cost monitoring.
       </p>
-
-      <ul class="facts">
-        <li><span>Education</span><b>B.E. Computer Science &mdash; Chandigarh University, 2019&ndash;2023</b></li>
-        <li><span>Languages</span><b>English, Hindi</b></li>
-        <li><span>Focus</span><b>Voice AI &middot; LLM systems &middot; RAG &middot; NLP infrastructure</b></li>
-      </ul>
     </div>
 
-    <div class="reveal">
-      <div class="code-card">
-        <div class="panel-bar">
-          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <span class="panel-title">agent.py</span>
-        </div>
-<pre class="code"><code><span class="c-k">async def</span> <span class="c-f">handle_turn</span>(session, audio):
-    <span class="c-s">"""One conversational turn, streamed end to end."""</span>
-    transcript = <span class="c-k">await</span> stt.stream(audio)           <span class="c-c"># Deepgram</span>
-    context    = <span class="c-k">await</span> retriever.search(transcript)  <span class="c-c"># Qdrant</span>
-
-    <span class="c-k">async for</span> token <span class="c-k">in</span> llm.stream(
-        prompt=session.persona,
-        query=transcript,
-        context=context,
-    ):
-        <span class="c-k">await</span> tts.speak(token)                    <span class="c-c"># ElevenLabs</span>
-
-    <span class="c-k">await</span> metrics.record(session.latency_breakdown())</code></pre>
-      </div>
-    </div>
+    <ul class="facts reveal">
+      <li><span>Education</span><b>B.E. Computer Science &mdash; Chandigarh University, 2019&ndash;2023</b></li>
+      <li><span>Languages</span><b>English, Hindi</b></li>
+      <li><span>Focus</span><b>Voice AI &middot; LLM applications &middot; RAG &middot; NLP pipelines</b></li>
+    </ul>
   </div>
 </section>
 
@@ -573,8 +545,8 @@
     <div class="contact reveal">
       <div class="contact-copy">
         <span class="section-tag">05 &mdash; Contact</span>
-        <h2>Let&rsquo;s build something that ships.</h2>
-        <p>Open to AI engineering roles and consulting on voice agents, RAG and LLM infrastructure. The fastest way to reach me is email.</p>
+        <h2>Get in touch</h2>
+        <p>The fastest way to reach me is email.</p>
       </div>
 
       <div class="contact-actions">
@@ -597,7 +569,7 @@
 
         <div class="contact-row">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11M7.5 10l4.5 4.5L16.5 10M4.5 19.5h15"/></svg>
-          <a class="contact-link" href="assets/Prashant_Singh_Resume.pdf" target="_blank" rel="noopener"><b>Résumé</b><small>Download PDF</small></a>
+          <a class="contact-link" href="assets/Prashant_Singh_Resume.pdf" target="_blank" rel="noopener"><b>R&eacute;sum&eacute;</b><small>Download PDF</small></a>
           <span class="ext" aria-hidden="true">&#8599;</span>
         </div>
       </div>
