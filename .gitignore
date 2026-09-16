@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+node_modules/
+.vercel
+.idea/
+.vscode/
+
+# Internal source material — never publish. Contains company-internal
+# strategy and architecture notes used only to write the site copy.
+documentation/
