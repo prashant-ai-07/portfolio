@@ -71,6 +71,9 @@ vercel --prod   # production deployment
    - For `https://<username>.github.io`, name the repo exactly `<username>.github.io`.
    - For `https://<username>.github.io/portfolio`, name it anything (e.g. `portfolio`).
 2. Repo → **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+   - On **GitHub Free the repo must be public** — Pages is unavailable for private repos, and the
+     workflow fails at *Configure Pages* with `Get Pages site failed … Not Found`. To keep the repo
+     private, deploy with Vercel instead (its free plan supports private repos).
 3. Push to `main`. The included workflow (`.github/workflows/deploy-pages.yml`) publishes the repo
    root on every push.
 

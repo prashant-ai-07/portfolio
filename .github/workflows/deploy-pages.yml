@@ -22,10 +22,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       # Defence in depth: documentation/ is gitignored, but never publish it
       # even if a copy sneaks into the checkout.
@@ -33,11 +33,12 @@ jobs:
         run: rm -rf documentation
 
       # The site is plain HTML/CSS/JS, so the repo root is the artifact.
+      # Dotfiles (.github, .gitignore, .vercelignore) are left out by default.
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: .
 
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
